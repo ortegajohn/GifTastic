@@ -202,7 +202,7 @@ $("#add-animal").on("click", function() {
       $(document).on("click","#giph_control", function(e) {
         e.preventDefault(); 
               var link = document.getElementById('giphy_Con');
-
+              console.log("giph_control: ",giph_control)
               link.click();
 
 
@@ -212,15 +212,19 @@ $("#add-animal").on("click", function() {
             console.log( "ready!" );
             var link1 = document.getElementById('giphy_Con');
             link1.click();
+            setTimeout(function(){ 
 
-            var link2 = document.getElementById('ZZ');
-            link2.click();
+              var link2 = document.getElementById('ZZ');
+              link2.click();
+            }, 1);  
+            // var link2 = document.getElementById('ZZ');
+            // link2.click();
 
 
 
             // Just making the giphy conroles work on a short timeline.
-            $("#ZZ").hide()
-            $("#giphy_Con").hide()
+            // $("#ZZ").hide()
+            // $("#giphy_Con").hide()
 
         });
       
